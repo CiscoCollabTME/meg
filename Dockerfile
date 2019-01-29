@@ -8,3 +8,4 @@ RUN cd /app \
 WORKDIR /app
 
 CMD ["node", "bot.js"]
+
