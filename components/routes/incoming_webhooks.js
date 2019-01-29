@@ -3,7 +3,7 @@ var debug = require('debug')('botkit:incoming_webhooks');
 module.exports = function(webserver, controller) {
 
     debug('Configured POST /ciscospark/receive url for receiving events');
-    webserver.post('/ciscospark/receive', function(req, res) {
+    webserver.post('/webexteams/receive', function(req, res) {
 
         // NOTE: we should enforce the token check here
 

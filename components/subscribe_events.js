@@ -16,7 +16,7 @@ module.exports = function(controller) {
             }
         }
 
-        var hook_url = 'https://' + controller.config.public_address + '/ciscospark/receive';
+        var hook_url = 'https://' + controller.config.public_address + '/webexteams/receive';
 
         debug('Cisco Spark: incoming webhook url is ', hook_url);
 
