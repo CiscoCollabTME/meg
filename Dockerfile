@@ -1,4 +1,4 @@
-FROM library/node:6.11.3
+FROM library/node:10.15.2
 
 COPY . /app
 
