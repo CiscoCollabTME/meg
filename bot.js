@@ -69,11 +69,11 @@ var controller = Botkit.sparkbot({
 
 console.log("controller initialized");
 
-if (process.env.watson_username && process.env.watson_password &&
+if (process.env.watson_url && process.env.watson_apiKey &&
     process.env.watson_workspace_id && process.env.watson_minimum_confidence) {
     var watsonMiddleware = require('botkit-middleware-watson')({
-      username: process.env.watson_username,
-      password: process.env.watson_password,
+      url: process.env.watson_url,
+      iam_apikey: process.env.watson_apiKey,
       workspace_id: process.env.watson_workspace_id,
       version_date: '2016-09-20',
       minimum_confidence: process.env.watson_minimum_confidence, // (Optional) Default is 0.75
